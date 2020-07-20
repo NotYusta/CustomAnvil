@@ -1,0 +1,22 @@
+package me.redepic.customanvil;
+
+import me.redepic.customanvil.anvil.*;
+import org.bukkit.event.Listener;
+import org.bukkit.plugin.java.JavaPlugin;
+
+public class CustomAnvil extends JavaPlugin implements Listener {
+
+    public int time = 2;
+    public repair repair = new repair(this);
+    public rename rename = new rename(this);
+    @Override
+    public void onEnable() {
+        getLogger().info("[CA] CustomAnvil has been enabled!");
+        getLogger().info("[CA] This plugin made by RedEpic");
+        getLogger().info("   __   _______\n" +
+                "  |_ _____  _  |\n" +
+                "     \\      /\n" +
+                "    __|    |_ _  \n" +
+                "  |____ ______ |");
+        }
+    }
